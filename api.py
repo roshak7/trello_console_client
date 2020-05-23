@@ -47,23 +47,7 @@ def move(name, column_name):
     for column in column_data:
         if column['name'] == column_name:
              requests.put(base_url.format('cards') + '/' + task_id + '/idList', data={'value': column['id'], **auth_params})
-             break
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+             break       
 if __name__ == "__main__":
     if len(sys.argv) <= 2:
         read()
